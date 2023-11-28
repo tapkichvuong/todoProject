@@ -40,9 +40,9 @@
     </section>
 </section>
 <script>
-
+    const current = window.location.origin;
     var instance = axios.create({
-        baseURL: 'http://https://todolist-8ggf.onrender.com'
+        baseURL: current
     });
 
     var Todo = function(title, id) {
